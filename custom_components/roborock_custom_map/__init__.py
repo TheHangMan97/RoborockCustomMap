@@ -24,7 +24,6 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     for r_entry in roborock_entries:
         if r_entry.state == ConfigEntryState.LOADED:
             coordinators.extend(r_entry.runtime_data.v1)
-            
             r_entry.async_on_unload(unload_this_entry)
 
     if not coordinators:

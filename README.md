@@ -32,7 +32,7 @@ If your map is displayed sideways or upside down, you can rotate the map directl
 
 This integration provides a **Select entity per map** to control rotation:
 - `select.<...>_rotation`
-- Options: `No rotation`, `Rotate 90°`, `Rotate 180°`, `Rotate 270°` (labels depend on your HA language)
+- Options: `0°`, `90°`, `180°`, `270°` (labels depend on your HA language)
 
 This rotates **both**:
 - the map image
